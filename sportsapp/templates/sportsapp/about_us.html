@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>bye bolo</h1>
+
+<div>
+
+    <div>
+        {% for users in users %}
+            <div>
+                <h5>{{about_us.id}}----- <a href="/about_us/{{about_us.id}}/">{{about_us.name}}</a> -----</h5>
+            </div>
+
+
+        {% endfor%}
+    </div>
+
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>helo bolo</h1>
+
+<div>
+
+    <div>
+        {% for users in users %}
+            <div>
+                <h5>{{users.id}}_____ {{users.name}}</h5>
+            </div>
+
+
+        {% endfor%}
+    </div>
+
+</div>
+{% endblock content %}
